@@ -26,7 +26,7 @@ export class GenerateNippoStack extends cdk.Stack {
     })
 
     new events.Rule(this, 'generateNippoRule', {
-      schedule: events.Schedule.cron({minute: '5', hour: '15' }),
+      schedule: events.Schedule.cron({minute: '5', hour: '0' }),
       targets: [new targets.LambdaFunction(fnGenerateNippo)]
     })
   }
