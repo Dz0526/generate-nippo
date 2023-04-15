@@ -1,4 +1,3 @@
-require("dotenv").config();
 import { format } from "date-fns";
 import { ja } from "date-fns/locale";
 const { Client } = require("@notionhq/client");
